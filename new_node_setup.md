@@ -40,7 +40,7 @@ sudo apt install python3 git curl snapd
 
 ## Launch validator node
 
-### Step 1. Install nearcore on Host
+### Install nearcore on Host
 
 - There are 2 ways to install nearcore currently. You can use Nearup or you can compile the source and use systemd to manage it.
 
@@ -158,7 +158,7 @@ _note that Node.js version 10+ is required to run NEAR CLI_
 #### Install Node Version 15.x and npm
 Nodes.js and npm can be install by
 ```bash
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
 sudo apt install build-essential nodejs
 PATH="$PATH"
 ```
@@ -167,16 +167,19 @@ PATH="$PATH"
 
 ```bash
 node -v
-    v14.X.X
+    v15.X.X
 npm -v
-    6.14.8
+    7.5.3
 ```
 
 ### Install near-cli 
 
 - This should work until I finish testing instructions (will install the main near-cli from near)
 ```bash
-npm install -g near-cli
+git clone https://github.com/near-guildnet/near-cli.git
+cd near-cli
+# sudo may be needed.
+npm install -g
 ```
 
 ## Setting up your environment
