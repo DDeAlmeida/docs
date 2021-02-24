@@ -40,7 +40,7 @@ sudo apt install python3 git curl snapd
 
 ## Launch validator node
 
-### Step 1. Install nearcore on Host
+### Install nearcore on Host
 
 - There are 2 ways to install nearcore currently. You can use Nearup or you can compile the source and use systemd to manage it.
 
